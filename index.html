@@ -1,113 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Pinterest Clone</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
+
 <body>
 
+  
+  <header class="navbar">
+    <div class="logo">Pinterest</div>
+      <div id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="input-search" type="text" placeholder="Search">
+            </div>
+    <nav>
+      <a href="#">Explore</a>
+      <a href="#">Business</a>
+      <a href="#">Create</a>
+      <a href="#">News</a>
+      <button class="login">Log in</button>
+      <button class="signup">Sign up</button>
+    </nav>
+  </header>
 
-<header class="navbar">
-  <div class="logo">Pinterest</div>
-  <nav>
-    <a href="#">Explore</a>
-    <a href="#">Business</a>
-    <a href="#">Create</a>
-    <a href="#">News</a>
-    <button class="login">Log in</button>
-    <button class="signup">Sign up</button>
-  </nav>
-</header>
+  
+  <section class="idea-heading">
+    <h1>Get your next <span><br>DIY idea</span><br>....</h1>
+  </section>
 
-
-<section class="hero">
-  <h1>Get your next<br><span>outfit idea</span><br>....</h1>
-
-  <div class="main img section">
-    <img src="https://picsum.photos/200/300?1">
-    <img src="https://picsum.photos/200/260?2">
-    <img src="https://picsum.photos/200/340?3">
-    <img src="https://picsum.photos/200/280?4">
-    <img src="https://picsum.photos/200/360?5">
-    <img src="https://picsum.photos/200/320?6">
-    <img src="https://picsum.photos/200/250?7">
-    <img src="https://picsum.photos/200/370?8">
-    <img src="https://picsum.photos/200/380?9">
-    <img src="https://picsum.photos/200/290?10">
-    <img src="https://picsum.photos/200/310?11">
-    <img src="https://picsum.photos/200/330?12">
-    <img src="https://picsum.photos/200/350?13">
-    <img src="https://picsum.photos/200/390?14">
-    <img src="https://picsum.photos/200/410?15">
-    <img src="https://picsum.photos/200/430?16">
-    <img src="https://picsum.photos/200/450?17">
-    <img src="https://picsum.photos/200/470?18">
-    <img src="https://picsum.photos/200/490?19">
-    <img src="https://picsum.photos/200/510?20">
-  </div>
-</section>
-
-
-<section class="features">
-  <div class="feature">
-    <img src="https://s.pinimg.com/webapp/search-by-skin-tone-2x-0c602edb.png" alt="">
-    <h2>Search by skin tone</h2>
-    <p>Find beauty ideas that suit you</p>
-    <button>Try now</button>
-  </div>
-
-  <div class="feature">
-    <img src="https://s.pinimg.com/webapp/group-boards-2px-0d493529.png" alt="">
-    <h2>Collaborate with group boards</h2>
-    <p>Plan ideas together</p>
-    <button>See examples</button>
-  </div>
-
-  <div class="feature">
-    <img src="" alt="">
-    <h2>Search visually with images</h2>
-    <p>Find similar ideas instantly</p>
-    <button>Learn more</button>
-  </div>
-</section>
+  
+  <section class="idea-grid">
+    <img src="https://picsum.photos/300/420?1">
+    <img src="https://picsum.photos/300/360?2">
+    <img src="https://picsum.photos/300/500?3">
+    <img src="https://picsum.photos/300/380?4">
+    <img src="https://picsum.photos/300/450?5">
+    <img src="https://picsum.photos/300/340?6">
+    <img src="https://picsum.photos/300/480?7">
+    <img src="https://picsum.photos/300/400?8">
+    <img src="https://picsum.photos/300/520?9">
+    <img src="https://picsum.photos/300/370?10">
+    <img src="https://picsum.photos/300/460?11">
+    <img src="https://picsum.photos/300/390?12">
+    <img src="https://picsum.photos/300/510?13">
+    <img src="https://picsum.photos/300/430?14">
+    <img src="https://picsum.photos/300/350?15">
+    <img src="https://picsum.photos/300/490?16">
+  </section>
 
 
-<section class="signup-section">
-  <h2>Sign up to get your ideas</h2>
-  <div class="signup-box">
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <button>Create account</button>
-  </div>
-</section>
+  
+  <section class="features-section">
+
+    <div class="block">
+      <div class="img-box">
+        <img src="https://s.pinimg.com/webapp/search-by-skin-tone-2x-0c602edb.png">
+      </div>
+      <div class="text-box">
+        <h2>Search by skin tone</h2>
+        <p>Find beauty inspiration that matches your unique skin tone.</p>
+        <button>Try now</button>
+      </div>
+    </div>
+
+    <div class="block reverse">
+      <div class="img-box">
+        <img src="https://s.pinimg.com/webapp/group-boards-2px-0d493529.png">
+      </div>
+      <div class="text-box">
+        <h2>Collaborate with group boards</h2>
+        <p>Share ideas and work together with your friends.</p>
+        <button>See examples</button>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="img-box">
+        <img src="https://s.pinimg.com/webapp/visual-search-2px-91066f59.png">
+      </div>
+      <div class="text-box">
+        <h2>Search visually with images</h2>
+        <p>Use images to discover similar ideas instantly.</p>
+        <button>Learn more</button>
+      </div>
+    </div>
+
+  </section>
 
 
-<footer>
-  <div class="footer-col">
-    <h3>Pinterest</h3>
-    <p>© 2025 Pinterest</p>
-  </div>
+  <section class="signup-overlay">
 
-  <div class="footer-col">
-    <h4>Get the app</h4>
-    <a href="#">iOS</a>
-    <a href="#">Android</a>
-  </div>
+    
+    <div class="overlay-text">
+      <h2>Sign up to get<br>your ideas</h2>
+    </div>
 
-  <div class="footer-col">
-    <h4>Quick links</h4>
-    <a href="#">Explore</a>
-    <a href="#">Shop</a>
-    <a href="#">Users</a>
-  </div>
+    
+    <div class="overlay-grid">
+      <img src="https://picsum.photos/200/260?1">
+      <img src="https://picsum.photos/200/320?2">
+      <img src="https://picsum.photos/200/280?3">
+      <img src="https://picsum.photos/200/340?4">
+      <img src="https://picsum.photos/200/300?5">
+      <img src="https://picsum.photos/200/360?6">
+      <img src="https://picsum.photos/200/290?7">
+      <img src="https://picsum.photos/200/330?8">
+      <img src="https://picsum.photos/200/310?9">
+      <img src="https://picsum.photos/200/370?10">
+    </div>
 
-  <div class="footer-col">
-    <h4>Policies</h4>
-    <a href="#">Terms of service</a>
-    <a href="#">Privacy policy</a>
-  </div>
-</footer>
+    
+    <div class="overlay-form">
+      <h3>Welcome to Pinterest</h3>
+      <p>Find new ideas to try</p>
+
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Create a password">
+      <input type="date">
+
+      <button class="red-btn">Continue</button>
+      <button class="google-btn">Continue with Google</button>
+
+      <small>
+        By continuing, you agree to Pinterest's<br>
+        Terms of Service and Privacy Policy
+      </small>
+    </div>
+
+  </section>
+
+
+  
+  <footer>
+    <div class="footer-col">
+      <h3>Pinterest</h3>
+      <p>© 2025 Pinterest</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get the app</h4>
+      <a href="#">iOS</a>
+      <a href="#">Android</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick links</h4>
+      <a href="#">Explore</a>
+      <a href="#">Shop</a>
+      <a href="#">Users</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <a href="#">Terms of service</a>
+      <a href="#">Privacy policy</a>
+    </div>
+  </footer>
 
 </body>
+
 </html>
